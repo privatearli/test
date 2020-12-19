@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  redis:
+    cluster:
+      nodes: 192.168.60.129:6379,192.168.60.129:6380,192.168.60.129:6381,92.168.60.129:6382,192.168.60.129:6383,192.168.60.129:6384
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.20.129:3306/mydb?characterEncoding=UTF-8
+    username: root
+    password: 12345678
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
